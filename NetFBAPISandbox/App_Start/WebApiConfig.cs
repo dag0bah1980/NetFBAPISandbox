@@ -28,6 +28,9 @@ namespace NetFBAPISandbox
             var appXmlType = config.Formatters.XmlFormatter.SupportedMediaTypes.FirstOrDefault(t => t.MediaType == "application/xml");
             config.Formatters.XmlFormatter.SupportedMediaTypes.Remove(appXmlType);
 
+            //config.Formatters.XmlFormatter.SupportedMediaTypes.Remove(
+            //config.Formatters.XmlFormatter.SupportedMediaTypes.FirstOrDefault(t => t.MediaType == "application/xml"));
+
             config.Formatters.Clear();
             config.Formatters.Add(new JsonMediaTypeFormatter());
 

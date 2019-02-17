@@ -1,0 +1,192 @@
+********** 2/16/2019 3:59:01 PM **********
+Requested Resource: http://localhost:60712/api/Setting/10017
+Client Browser Details:  Chrome 72.0
+Mobile Device: False
+Client IP: ::1
+Request Type: GET
+Inner Exception Type: FirebirdSql.Data.Common.IscException
+Inner Exception: Your user name and password are not defined. Ask your database administrator to set up a Firebird login.
+Inner Source: FirebirdSql.Data.FirebirdClient
+Inner Stack Trace: 
+   at FirebirdSql.Data.Client.Managed.Version10.GdsDatabase.ProcessResponse(IResponse response)
+   at FirebirdSql.Data.Client.Managed.Version10.GdsDatabase.ReadResponse()
+   at FirebirdSql.Data.Client.Managed.Version13.GdsDatabase.Attach(DatabaseParameterBuffer dpb, String dataSource, Int32 port, String database, Byte[] cryptKey)
+   at FirebirdSql.Data.FirebirdClient.FbConnectionInternal.Connect()
+Exception Type: FirebirdSql.Data.FirebirdClient.FbException
+Exception: Your user name and password are not defined. Ask your database administrator to set up a Firebird login.
+Stack Trace: 
+   at FirebirdSql.Data.FirebirdClient.FbConnectionInternal.Connect()
+   at FirebirdSql.Data.FirebirdClient.FbConnectionPoolManager.Pool.CreateNewConnectionIfPossibleImpl(FbConnectionString connectionString)
+   at FirebirdSql.Data.FirebirdClient.FbConnectionPoolManager.Pool.GetConnection(FbConnection owner)
+   at FirebirdSql.Data.FirebirdClient.FbConnectionPoolManager.Get(FbConnectionString connectionString, FbConnection owner)
+   at FirebirdSql.Data.FirebirdClient.FbConnection.Open()
+   at NetFBAPISandbox.Controllers.SettingController.GetSetting(Int32 requestid) in D:\_GitHub\NetFBAPISandbox\NetFBAPISandbox\Controllers\SettingController.cs:line 53
+
+********** 2/16/2019 3:59:19 PM **********
+Requested Resource: http://localhost:60712/api/Setting/10017
+Client Browser Details:  Chrome 72.0
+Mobile Device: False
+Client IP: ::1
+Request Type: GET
+Inner Exception Type: FirebirdSql.Data.Common.IscException
+Inner Exception: Your user name and password are not defined. Ask your database administrator to set up a Firebird login.
+Inner Source: FirebirdSql.Data.FirebirdClient
+Inner Stack Trace: 
+   at FirebirdSql.Data.Client.Managed.Version10.GdsDatabase.ProcessResponse(IResponse response)
+   at FirebirdSql.Data.Client.Managed.Version10.GdsDatabase.ReadResponse()
+   at FirebirdSql.Data.Client.Managed.Version13.GdsDatabase.Attach(DatabaseParameterBuffer dpb, String dataSource, Int32 port, String database, Byte[] cryptKey)
+   at FirebirdSql.Data.FirebirdClient.FbConnectionInternal.Connect()
+Exception Type: FirebirdSql.Data.FirebirdClient.FbException
+Exception: Your user name and password are not defined. Ask your database administrator to set up a Firebird login.
+Stack Trace: 
+   at FirebirdSql.Data.FirebirdClient.FbConnectionInternal.Connect()
+   at FirebirdSql.Data.FirebirdClient.FbConnectionPoolManager.Pool.CreateNewConnectionIfPossibleImpl(FbConnectionString connectionString)
+   at FirebirdSql.Data.FirebirdClient.FbConnectionPoolManager.Pool.GetConnection(FbConnection owner)
+   at FirebirdSql.Data.FirebirdClient.FbConnectionPoolManager.Get(FbConnectionString connectionString, FbConnection owner)
+   at FirebirdSql.Data.FirebirdClient.FbConnection.Open()
+   at NetFBAPISandbox.Controllers.SettingController.GetSetting(Int32 requestid) in D:\_GitHub\NetFBAPISandbox\NetFBAPISandbox\Controllers\SettingController.cs:line 53
+
+********** 2/16/2019 4:03:38 PM **********
+Requested Resource: http://localhost:60712/api/Setting/10017
+Client Browser Details:  Chrome 72.0
+Mobile Device: False
+Client IP: ::1
+Request Type: GET
+Inner Exception Type: FirebirdSql.Data.Common.IscException
+Inner Exception: Your user name and password are not defined. Ask your database administrator to set up a Firebird login.
+Inner Source: FirebirdSql.Data.FirebirdClient
+Inner Stack Trace: 
+   at FirebirdSql.Data.Client.Managed.Version10.GdsDatabase.ProcessResponse(IResponse response)
+   at FirebirdSql.Data.Client.Managed.Version10.GdsDatabase.ReadResponse()
+   at FirebirdSql.Data.Client.Managed.Version13.GdsDatabase.Attach(DatabaseParameterBuffer dpb, String dataSource, Int32 port, String database, Byte[] cryptKey)
+   at FirebirdSql.Data.FirebirdClient.FbConnectionInternal.Connect()
+Exception Type: FirebirdSql.Data.FirebirdClient.FbException
+Exception: Your user name and password are not defined. Ask your database administrator to set up a Firebird login.
+Stack Trace: 
+   at FirebirdSql.Data.FirebirdClient.FbConnectionInternal.Connect()
+   at FirebirdSql.Data.FirebirdClient.FbConnectionPoolManager.Pool.CreateNewConnectionIfPossibleImpl(FbConnectionString connectionString)
+   at FirebirdSql.Data.FirebirdClient.FbConnectionPoolManager.Pool.GetConnection(FbConnection owner)
+   at FirebirdSql.Data.FirebirdClient.FbConnectionPoolManager.Get(FbConnectionString connectionString, FbConnection owner)
+   at FirebirdSql.Data.FirebirdClient.FbConnection.Open()
+   at NetFBAPISandbox.Controllers.SettingController.GetSetting(Int32 requestid) in D:\_GitHub\NetFBAPISandbox\NetFBAPISandbox\Controllers\SettingController.cs:line 53
+
+********** 2/16/2019 4:05:03 PM **********
+Requested Resource: http://localhost:60712/api/Setting/10017
+Client Browser Details:  Chrome 72.0
+Mobile Device: False
+Client IP: ::1
+Request Type: GET
+Inner Exception Type: FirebirdSql.Data.Common.IscException
+Inner Exception: Your user name and password are not defined. Ask your database administrator to set up a Firebird login.
+Inner Source: FirebirdSql.Data.FirebirdClient
+Inner Stack Trace: 
+   at FirebirdSql.Data.Client.Managed.Version10.GdsDatabase.ProcessResponse(IResponse response)
+   at FirebirdSql.Data.Client.Managed.Version10.GdsDatabase.ReadResponse()
+   at FirebirdSql.Data.Client.Managed.Version13.GdsDatabase.Attach(DatabaseParameterBuffer dpb, String dataSource, Int32 port, String database, Byte[] cryptKey)
+   at FirebirdSql.Data.FirebirdClient.FbConnectionInternal.Connect()
+Exception Type: FirebirdSql.Data.FirebirdClient.FbException
+Exception: Your user name and password are not defined. Ask your database administrator to set up a Firebird login.
+Stack Trace: 
+   at FirebirdSql.Data.FirebirdClient.FbConnectionInternal.Connect()
+   at FirebirdSql.Data.FirebirdClient.FbConnectionPoolManager.Pool.CreateNewConnectionIfPossibleImpl(FbConnectionString connectionString)
+   at FirebirdSql.Data.FirebirdClient.FbConnectionPoolManager.Pool.GetConnection(FbConnection owner)
+   at FirebirdSql.Data.FirebirdClient.FbConnectionPoolManager.Get(FbConnectionString connectionString, FbConnection owner)
+   at FirebirdSql.Data.FirebirdClient.FbConnection.Open()
+   at NetFBAPISandbox.Controllers.SettingController.GetSetting(Int32 requestid) in D:\_GitHub\NetFBAPISandbox\NetFBAPISandbox\Controllers\SettingController.cs:line 53
+
+********** 2/16/2019 4:05:36 PM **********
+Requested Resource: http://localhost:60712/api/Setting/10017
+Client Browser Details:  Chrome 72.0
+Mobile Device: False
+Client IP: ::1
+Request Type: GET
+Inner Exception Type: FirebirdSql.Data.Common.IscException
+Inner Exception: I/O error during "CreateFile (open)" operation for file "FB3.FDB"
+Error while trying to open file
+Inner Source: FirebirdSql.Data.FirebirdClient
+Inner Stack Trace: 
+   at FirebirdSql.Data.Client.Managed.Version10.GdsDatabase.ProcessResponse(IResponse response)
+   at FirebirdSql.Data.Client.Managed.Version10.GdsDatabase.ReadResponse()
+   at FirebirdSql.Data.Client.Managed.Version13.GdsDatabase.Attach(DatabaseParameterBuffer dpb, String dataSource, Int32 port, String database, Byte[] cryptKey)
+   at FirebirdSql.Data.FirebirdClient.FbConnectionInternal.Connect()
+Exception Type: FirebirdSql.Data.FirebirdClient.FbException
+Exception: I/O error during "CreateFile (open)" operation for file "FB3.FDB"
+Error while trying to open file
+Stack Trace: 
+   at FirebirdSql.Data.FirebirdClient.FbConnectionInternal.Connect()
+   at FirebirdSql.Data.FirebirdClient.FbConnectionPoolManager.Pool.CreateNewConnectionIfPossibleImpl(FbConnectionString connectionString)
+   at FirebirdSql.Data.FirebirdClient.FbConnectionPoolManager.Pool.GetConnection(FbConnection owner)
+   at FirebirdSql.Data.FirebirdClient.FbConnectionPoolManager.Get(FbConnectionString connectionString, FbConnection owner)
+   at FirebirdSql.Data.FirebirdClient.FbConnection.Open()
+   at NetFBAPISandbox.Controllers.SettingController.GetSetting(Int32 requestid) in D:\_GitHub\NetFBAPISandbox\NetFBAPISandbox\Controllers\SettingController.cs:line 53
+
+********** 2/16/2019 4:18:49 PM **********
+Requested Resource: http://localhost:60712/api/Setting/10017
+Client Browser Details:  Chrome 72.0
+Mobile Device: False
+Client IP: ::1
+Request Type: GET
+Exception Type: System.InvalidOperationException
+Exception: There are no data to read.
+Stack Trace: 
+   at FirebirdSql.Data.FirebirdClient.FbDataReader.CheckPosition()
+   at FirebirdSql.Data.FirebirdClient.FbDataReader.GetValue(Int32 i)
+   at FirebirdSql.Data.FirebirdClient.FbDataReader.get_Item(String name)
+   at NetFBAPISandbox.Controllers.SettingController.GetSetting(Int32 requestid) in D:\_GitHub\NetFBAPISandbox\NetFBAPISandbox\Controllers\SettingController.cs:line 68
+
+********** 2/16/2019 4:19:59 PM **********
+Requested Resource: http://localhost:60712/api/Setting/10017
+Client Browser Details:  Chrome 72.0
+Mobile Device: False
+Client IP: ::1
+Request Type: GET
+Exception Type: System.InvalidOperationException
+Exception: There are no data to read.
+Stack Trace: 
+   at FirebirdSql.Data.FirebirdClient.FbDataReader.CheckPosition()
+   at FirebirdSql.Data.FirebirdClient.FbDataReader.GetValue(Int32 i)
+   at FirebirdSql.Data.FirebirdClient.FbDataReader.get_Item(String name)
+   at NetFBAPISandbox.Controllers.SettingController.GetSetting(Int32 requestid) in D:\_GitHub\NetFBAPISandbox\NetFBAPISandbox\Controllers\SettingController.cs:line 68
+
+********** 2/16/2019 4:19:59 PM **********
+Requested Resource: http://localhost:60712/api/Setting/10017
+Client Browser Details:  Chrome 72.0
+Mobile Device: False
+Client IP: ::1
+Request Type: GET
+Exception Type: System.InvalidOperationException
+Exception: There are no data to read.
+Stack Trace: 
+   at FirebirdSql.Data.FirebirdClient.FbDataReader.CheckPosition()
+   at FirebirdSql.Data.FirebirdClient.FbDataReader.GetValue(Int32 i)
+   at FirebirdSql.Data.FirebirdClient.FbDataReader.get_Item(String name)
+   at NetFBAPISandbox.Controllers.SettingController.GetSetting(Int32 requestid) in D:\_GitHub\NetFBAPISandbox\NetFBAPISandbox\Controllers\SettingController.cs:line 68
+
+********** 2/16/2019 6:15:18 PM **********
+Requested Resource: http://localhost:60712/api/Setting/10017
+Client Browser Details:  Chrome 72.0
+Mobile Device: False
+Client IP: ::1
+Request Type: GET
+Exception Type: System.InvalidOperationException
+Exception: There are no data to read.
+Stack Trace: 
+   at FirebirdSql.Data.FirebirdClient.FbDataReader.CheckPosition()
+   at FirebirdSql.Data.FirebirdClient.FbDataReader.GetValue(Int32 i)
+   at FirebirdSql.Data.FirebirdClient.FbDataReader.get_Item(String name)
+   at NetFBAPISandbox.Controllers.SettingController.GetSetting(Int32 requestid) in D:\_GitHub\NetFBAPISandbox\NetFBAPISandbox\Controllers\SettingController.cs:line 69
+
+********** 2/16/2019 6:22:19 PM **********
+Requested Resource: http://localhost:60712/api/Setting/10017
+Client Browser Details:  Chrome 72.0
+Mobile Device: False
+Client IP: ::1
+Request Type: GET
+Exception Type: System.InvalidOperationException
+Exception: There are no data to read.
+Stack Trace: 
+   at FirebirdSql.Data.FirebirdClient.FbDataReader.CheckPosition()
+   at FirebirdSql.Data.FirebirdClient.FbDataReader.GetValue(Int32 i)
+   at FirebirdSql.Data.FirebirdClient.FbDataReader.get_Item(String name)
+   at NetFBAPISandbox.Controllers.SettingController.GetSetting(Int32 requestid) in D:\_GitHub\NetFBAPISandbox\NetFBAPISandbox\Controllers\SettingController.cs:line 70
+
