@@ -10,41 +10,35 @@ using NetFBAPISandbox.Connect;
 using NetFBAPISandbox.Exceptions;
 using FirebirdSql.Data.FirebirdClient;
 
+
 namespace NetFBAPISandbox.Controllers
 {
     [RoutePrefix("api")]
-    public class SettingController : ApiController
+    public class SecurityController : ApiController
     {
-        [Route("StringSettings")]
-        [HttpGet]
-        // GET: api/StringSettings
-        public string StringSettings()
-        {
+    
 
-            return "Settings";
+        [Route("TestSecurity")]
+        [HttpGet]
+        // GET: api/TestSecurity
+        public IHttpActionResult TestSecurity()
+        {
+            var _testSecurity = new Security();
+            _testSecurity.ID = 1;
+            _testSecurity.CREATED = DateTime.Now;
+            return Ok(_testSecurity);
         }
 
-        [Route("TestSettings")]
+        [Route("Security/{requestid}")]
         [HttpGet]
-        // GET: api/TestSettings
-        public IHttpActionResult Settings()
-        {
-            var _testSetting = new Setting();
-            _testSetting.ID = 1;
-            _testSetting.CREATED = DateTime.Now;
-            return Ok(_testSetting);
-        }
-
-        [Route("Setting/{requestid}")]
-        [HttpGet]
-        // GET: api/Setting/{ID}
-        public IHttpActionResult GetSetting(int requestid)
+        // GET: api/Security/{ID}
+        public IHttpActionResult GetSecurity(int requestid)
         {
             //FBConnection fbconndetails = new FBConnection();
 
             FBConnection selectconnection = new FBConnection();
 
-            string sqlcmd = "select * from settings where id = @requestid";
+            string sqlcmd = "select * from SECURITY_ROLES where id = @requestid";
             DataTable result = new DataTable();
 
             using (selectconnection.fbconnect)
@@ -88,14 +82,14 @@ namespace NetFBAPISandbox.Controllers
                 {
                     selectconnection.fbconnect.Close();
                 }
-                
+
             }
         }
 
-        [Route("Settings")]
+        [Route("Security")]
         [HttpGet]
-        // GET: api/Settings
-        public IHttpActionResult GetSettings()
+        // GET: api/Security
+        public IHttpActionResult GetSecurity()
         {
             //FBConnection fbconndetails = new FBConnection();
 
@@ -120,7 +114,7 @@ namespace NetFBAPISandbox.Controllers
 
                             result.Load(fbsqlreader);
                             return Ok(result);
-                            
+
                         }
                         catch (Exception e)
                         {
