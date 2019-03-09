@@ -69,3 +69,15 @@ D:\_GitHub\NetFBAPISandbox\NetFBAPISandbox\obj\Debug\NetFBAPISandbox.csproj.Core
 D:\_GitHub\NetFBAPISandbox\NetFBAPISandbox\obj\Debug\NetFBAPISandbox.csproj.CopyComplete
 D:\_GitHub\NetFBAPISandbox\NetFBAPISandbox\obj\Debug\NetFBAPISandbox.dll
 D:\_GitHub\NetFBAPISandbox\NetFBAPISandbox\obj\Debug\NetFBAPISandbox.pdb
+D:\_GitHub\NetFBAPISandbox\NetFBAPISandbox\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\_GitHub\NetFBAPISandbox\NetFBAPISandbox\bin\Microsoft.IdentityModel.Logging.dll
+D:\_GitHub\NetFBAPISandbox\NetFBAPISandbox\bin\Microsoft.IdentityModel.Tokens.dll
+D:\_GitHub\NetFBAPISandbox\NetFBAPISandbox\bin\System.IdentityModel.Tokens.Jwt.dll
+D:\_GitHub\NetFBAPISandbox\NetFBAPISandbox\bin\Microsoft.IdentityModel.JsonWebTokens.pdb
+D:\_GitHub\NetFBAPISandbox\NetFBAPISandbox\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\_GitHub\NetFBAPISandbox\NetFBAPISandbox\bin\Microsoft.IdentityModel.Logging.pdb
+D:\_GitHub\NetFBAPISandbox\NetFBAPISandbox\bin\Microsoft.IdentityModel.Logging.xml
+D:\_GitHub\NetFBAPISandbox\NetFBAPISandbox\bin\Microsoft.IdentityModel.Tokens.pdb
+D:\_GitHub\NetFBAPISandbox\NetFBAPISandbox\bin\Microsoft.IdentityModel.Tokens.xml
+D:\_GitHub\NetFBAPISandbox\NetFBAPISandbox\bin\System.IdentityModel.Tokens.Jwt.pdb
+D:\_GitHub\NetFBAPISandbox\NetFBAPISandbox\bin\System.IdentityModel.Tokens.Jwt.xml

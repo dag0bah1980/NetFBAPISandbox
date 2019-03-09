@@ -8,6 +8,7 @@ using System.Data;
 using NetFBAPISandbox.Models;
 using NetFBAPISandbox.Connect;
 using NetFBAPISandbox.Exceptions;
+using NetFBAPISandbox.JWTSecurity.Filters;
 using FirebirdSql.Data.FirebirdClient;
 
 namespace NetFBAPISandbox.Controllers
@@ -15,6 +16,7 @@ namespace NetFBAPISandbox.Controllers
     [RoutePrefix("api")]
     public class SettingController : ApiController
     {
+        [JWTAuthentication]
         [Route("StringSettings")]
         [HttpGet]
         // GET: api/StringSettings
