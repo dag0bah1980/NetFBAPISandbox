@@ -1,0 +1,64 @@
+********** 3/19/2019 8:35:21 PM **********
+Requested Resource: http://localhost:60712/api/DataSetup/Sample
+Client Browser Details:  Chrome 72.0
+Mobile Device: False
+Client IP: ::1
+Request Type: GET
+Inner Exception Type: FirebirdSql.Data.Common.IscException
+Inner Exception: Dynamic SQL Error
+SQL error code = -204
+Table unknown
+DS_SETTINGS
+At line 1, column 15
+Inner Source: FirebirdSql.Data.FirebirdClient
+Inner Stack Trace: 
+   at FirebirdSql.Data.Client.Managed.Version10.GdsDatabase.ProcessResponse(IResponse response)
+   at FirebirdSql.Data.Client.Managed.Version10.GdsDatabase.ReadResponse()
+   at FirebirdSql.Data.Client.Managed.Version10.GdsDatabase.ReadGenericResponse()
+   at FirebirdSql.Data.Client.Managed.Version11.GdsStatement.Prepare(String commandText)
+   at FirebirdSql.Data.FirebirdClient.FbCommand.Prepare(Boolean returnsSet)
+   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteCommand(CommandBehavior behavior, Boolean returnsSet)
+   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteReader(CommandBehavior behavior)
+Exception Type: FirebirdSql.Data.FirebirdClient.FbException
+Exception: Dynamic SQL Error
+SQL error code = -204
+Table unknown
+DS_SETTINGS
+At line 1, column 15
+Stack Trace: 
+   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteReader(CommandBehavior behavior)
+   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteReader()
+   at NetFBAPISandbox.Controllers.DataSetup.SampleController.GetSamples() in D:\_GitHub\NetFBAPISandbox\NetFBAPISandbox\Controllers\DataSetup\SampleController.cs:line 40
+
+********** 3/19/2019 8:35:57 PM **********
+Requested Resource: http://localhost:60712/api/DataSetup/Samples
+Client Browser Details:  Chrome 72.0
+Mobile Device: False
+Client IP: ::1
+Request Type: GET
+Inner Exception Type: FirebirdSql.Data.Common.IscException
+Inner Exception: Dynamic SQL Error
+SQL error code = -204
+Table unknown
+DS_SAMPLES
+At line 1, column 15
+Inner Source: FirebirdSql.Data.FirebirdClient
+Inner Stack Trace: 
+   at FirebirdSql.Data.Client.Managed.Version10.GdsDatabase.ProcessResponse(IResponse response)
+   at FirebirdSql.Data.Client.Managed.Version10.GdsDatabase.ReadResponse()
+   at FirebirdSql.Data.Client.Managed.Version10.GdsDatabase.ReadGenericResponse()
+   at FirebirdSql.Data.Client.Managed.Version11.GdsStatement.Prepare(String commandText)
+   at FirebirdSql.Data.FirebirdClient.FbCommand.Prepare(Boolean returnsSet)
+   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteCommand(CommandBehavior behavior, Boolean returnsSet)
+   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteReader(CommandBehavior behavior)
+Exception Type: FirebirdSql.Data.FirebirdClient.FbException
+Exception: Dynamic SQL Error
+SQL error code = -204
+Table unknown
+DS_SAMPLES
+At line 1, column 15
+Stack Trace: 
+   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteReader(CommandBehavior behavior)
+   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteReader()
+   at NetFBAPISandbox.Controllers.DataSetup.SampleController.GetSamples() in D:\_GitHub\NetFBAPISandbox\NetFBAPISandbox\Controllers\DataSetup\SampleController.cs:line 40
+
