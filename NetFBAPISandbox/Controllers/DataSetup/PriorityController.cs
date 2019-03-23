@@ -14,19 +14,19 @@ using FirebirdSql.Data.FirebirdClient;
 namespace NetFBAPISandbox.Controllers.DataSetup
 {
     [RoutePrefix("api/DataSetup")]
-    public class SampleController : ApiController
+    public class PriorityController : ApiController
     {
-        [Route("Samples")]
+        [Route("Priorities")]
         [HttpGet]
-        // GET: api/DataSetup/Samples
-        // Returns all fields from DS_SAMPLE
-        public IHttpActionResult GetSamples()
+        // GET: api/DataSetup/Priorities
+        // Returns all fields from PRIORITIES
+        public IHttpActionResult GetPriorities()
         {
             //FBConnection fbconndetails = new FBConnection();
 
             FBConnection selectconnection = new FBConnection();
 
-            string sqlcmd = "select * from DS_SAMPLE";
+            string sqlcmd = "select * from PRIORITIES order by ORDERVALUE asc";
             DataTable result = new DataTable();
 
             using (selectconnection.fbconnect)
@@ -71,17 +71,17 @@ namespace NetFBAPISandbox.Controllers.DataSetup
         }
 
 
-        [Route("SamplesDropDown")]
+        [Route("PrioritiesDropDown")]
         [HttpGet]
-        // GET: api/DataSetup/SamplesDropDown
-        // Returns the ID, Code, Name, and Description fields in the table DS_SAMPLE that are ACTIVE and NOT DELETED (used for dropdown population).
-        public IHttpActionResult GetSamplesDropDown()
+        // GET: api/DataSetup/PrioritiesDropDown
+        // Returns the ID, Code, Name, and Description fields in the table PRIORITIES that are ACTIVE and NOT DELETED (used for dropdown population).
+        public IHttpActionResult GetPrioritiesDropDown()
         {
             //FBConnection fbconndetails = new FBConnection();
 
             FBConnection selectconnection = new FBConnection();
 
-            string sqlcmd = "select ID, CODE, NAME from DS_SAMPLE where ISACTIVE is true and ISDELETED is false";
+            string sqlcmd = "select ID, CODE, NAME from PRIORITIES where ISACTIVE is true and ISDELETED is false order by ORDERVALUE asc";
             DataTable result = new DataTable();
 
             using (selectconnection.fbconnect)
@@ -126,17 +126,17 @@ namespace NetFBAPISandbox.Controllers.DataSetup
         }
 
 
-        [Route("Sample/{requestid}")]
+        [Route("Priority/{requestid}")]
         [HttpGet]
-        // GET: api/DataSetup/Sample/{ID}
-        // Returns all fields for a specific Sample by ID
-        public IHttpActionResult GetSample(int requestid)
+        // GET: api/DataSetup/Priority/{ID}
+        // Returns all fields for a specific Priority by ID
+        public IHttpActionResult GetPriority(int requestid)
         {
             //FBConnection fbconndetails = new FBConnection();
 
             FBConnection selectconnection = new FBConnection();
 
-            string sqlcmd = "select * from DS_SAMPLE where id = @requestid";
+            string sqlcmd = "select * from PRIORITIES where id = @requestid";
             DataTable result = new DataTable();
 
             using (selectconnection.fbconnect)

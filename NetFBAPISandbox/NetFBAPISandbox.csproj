@@ -114,7 +114,9 @@
     <Compile Include="Connect\Connection.cs" />
     <Compile Include="Connect\DBConnectionController.cs" />
     <Compile Include="Connect\FBConnection.cs" />
+    <Compile Include="Controllers\DataSetup\PriorityController.cs" />
     <Compile Include="Controllers\DataSetup\SampleController.cs" />
+    <Compile Include="Controllers\DataSetup\SeverityController.cs" />
     <Compile Include="Controllers\SecurityController.cs" />
     <Compile Include="Controllers\SettingController.cs" />
     <Compile Include="Exceptions\ExceptionsLogByFile.cs" />
