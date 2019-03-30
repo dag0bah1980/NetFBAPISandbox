@@ -1,0 +1,32 @@
+********** 3/23/2019 12:15:30 PM **********
+Requested Resource: http://localhost:60712/api/Setting/10017
+Client Browser Details:  Chrome 72.0
+Mobile Device: False
+Client IP: ::1
+Request Type: GET
+Inner Exception Type: FirebirdSql.Data.Common.IscException
+Inner Exception: Dynamic SQL Error
+SQL error code = -204
+Table unknown
+SETTINGS
+At line 1, column 15
+Inner Source: FirebirdSql.Data.FirebirdClient
+Inner Stack Trace: 
+   at FirebirdSql.Data.Client.Managed.Version10.GdsDatabase.ProcessResponse(IResponse response)
+   at FirebirdSql.Data.Client.Managed.Version10.GdsDatabase.ReadResponse()
+   at FirebirdSql.Data.Client.Managed.Version10.GdsDatabase.ReadGenericResponse()
+   at FirebirdSql.Data.Client.Managed.Version11.GdsStatement.Prepare(String commandText)
+   at FirebirdSql.Data.FirebirdClient.FbCommand.Prepare(Boolean returnsSet)
+   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteCommand(CommandBehavior behavior, Boolean returnsSet)
+   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteReader(CommandBehavior behavior)
+Exception Type: FirebirdSql.Data.FirebirdClient.FbException
+Exception: Dynamic SQL Error
+SQL error code = -204
+Table unknown
+SETTINGS
+At line 1, column 15
+Stack Trace: 
+   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteReader(CommandBehavior behavior)
+   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteReader()
+   at NetFBAPISandbox.Controllers.SettingController.GetSetting(Int32 requestid) in D:\_GitHub\NetFBAPISandbox\NetFBAPISandbox\Controllers\SettingController.cs:line 70
+

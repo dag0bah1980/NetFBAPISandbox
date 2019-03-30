@@ -11,23 +11,23 @@ using NetFBAPISandbox.Exceptions;
 using NetFBAPISandbox.JWTSecurity.Filters;
 using FirebirdSql.Data.FirebirdClient;
 
-
 namespace NetFBAPISandbox.Controllers.DataSetup
 {
     [RoutePrefix("api/DataSetup")]
-    public class SeverityController : ApiController
+    public class DS_SampleController : ApiController
     {
-        [Route("Severities")]
+
+        [Route("DS_Samples")]
         [HttpGet]
-        // GET: api/DataSetup/Severities
-        // Returns all fields from SEVERITIES
-        public IHttpActionResult GetSeverities()
+        // GET: api/DataSetup/DS_Samples
+        // Returns all fields from DS_SAMPLE
+        public IHttpActionResult GetDS_Samples()
         {
             //FBConnection fbconndetails = new FBConnection();
 
             FBConnection selectconnection = new FBConnection();
 
-            string sqlcmd = "select * from SEVERITIES order by ORDERVALUE asc";
+            string sqlcmd = "select * from DS_SAMPLE order by ID asc";
             DataTable result = new DataTable();
 
             using (selectconnection.fbconnect)
@@ -72,17 +72,17 @@ namespace NetFBAPISandbox.Controllers.DataSetup
         }
 
 
-        [Route("SeveritiesDropDown")]
+        [Route("DS_SamplesDropDown")]
         [HttpGet]
-        // GET: api/DataSetup/SeveritiesDropDown
-        // Returns the ID, Code, Name, and Description fields in the table SEVERITIES that are ACTIVE and NOT DELETED (used for dropdown population).
-        public IHttpActionResult GetSeveritiesDropDown()
+        // GET: api/DataSetup/DS_SamplesDropDown
+        // Returns the ID, Code, Name, and Description fields in the table DS_SAMPLE that are ACTIVE and NOT DELETED (used for dropdown population).
+        public IHttpActionResult GetDS_SamplesDropDown()
         {
             //FBConnection fbconndetails = new FBConnection();
 
             FBConnection selectconnection = new FBConnection();
 
-            string sqlcmd = "select ID, CODE, NAME, DESCRIPTION from SEVERITIES where ISACTIVE is true and ISDELETED is false order by ORDERVALUE asc";
+            string sqlcmd = "select ID, CODE, NAME, DESCRIPTION from DS_SAMPLE where ISACTIVE is true and ISDELETED is false order by ID asc";
             DataTable result = new DataTable();
 
             using (selectconnection.fbconnect)
@@ -127,17 +127,16 @@ namespace NetFBAPISandbox.Controllers.DataSetup
         }
 
 
-        [Route("Severity/{requestid}")]
+        [Route("DS_Sample/{requestid}")]
         [HttpGet]
-        // GET: api/DataSetup/Severity/{ID}
-        // Returns all fields for a specific Severity by ID
-        public IHttpActionResult GetSeverity(int requestid)
+        // GET: api/DataSetup/DS_Sample/{ID}
+        public IHttpActionResult GetDS_Sample(int requestid)
         {
             //FBConnection fbconndetails = new FBConnection();
 
             FBConnection selectconnection = new FBConnection();
 
-            string sqlcmd = "select * from SEVERITIES where id = @requestid";
+            string sqlcmd = "select * from DS_SAMPLE where id = @requestid";
             DataTable result = new DataTable();
 
             using (selectconnection.fbconnect)

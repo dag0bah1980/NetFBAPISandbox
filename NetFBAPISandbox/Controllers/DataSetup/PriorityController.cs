@@ -81,7 +81,7 @@ namespace NetFBAPISandbox.Controllers.DataSetup
 
             FBConnection selectconnection = new FBConnection();
 
-            string sqlcmd = "select ID, CODE, NAME from PRIORITIES where ISACTIVE is true and ISDELETED is false order by ORDERVALUE asc";
+            string sqlcmd = "select ID, CODE, NAME, DESCRIPTION from PRIORITIES where ISACTIVE is true and ISDELETED is false order by ORDERVALUE asc";
             DataTable result = new DataTable();
 
             using (selectconnection.fbconnect)
