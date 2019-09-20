@@ -118,6 +118,7 @@
     <Compile Include="Controllers\DataSetup\PriorityController.cs" />
     <Compile Include="Controllers\DataSetup\SampleController.cs" />
     <Compile Include="Controllers\DataSetup\SeverityController.cs" />
+    <Compile Include="Controllers\DataSetup\UserController.cs" />
     <Compile Include="Controllers\SecurityController.cs" />
     <Compile Include="Controllers\SettingController.cs" />
     <Compile Include="Exceptions\ExceptionsLogByFile.cs" />
